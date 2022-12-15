@@ -1,6 +1,6 @@
 import AuthenticationPage from '../page/authentication.page'
 
-describe('Login', () => {
+describe('Authentication', () => {
     beforeEach(() => {
         cy.visit('/')
         cy.get(AuthenticationPage.loginSignUpBtn).click()
