@@ -22,12 +22,18 @@ class HomePage{
         return ('#category')
     }
     //returns the list of products on the home page
-    get productList() {
-        return ('.chakra-stack.css-uaqjf')
+    // get productList() {
+    //     return ('.chakra-stack.css-uaqjf')
+    // }
+    get firstProduct() {
+        return ('#product-0 > div.css-5ge9zd > .chakra-aspect-ratio.css-791950')
     }
     //#End Page Selectors
 
     //#Page Methods
+    openProductDetail(){
+        cy.get(this.firstProduct).click();
+    }
 
     //#End Page Methods
 
