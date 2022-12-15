@@ -14,12 +14,14 @@ describe('Product Detail', () => {
             cy.get("[name=submit]").click();
             }
         );
+        //Clicking on the product seems to give me a client side error.
+        //Workaround is to navigate to the product via url
         cy.visit('https://ui-automation-camp.vercel.app/products/quality-hat-model')
         
 
     });
 
-    //Checks if the product title is present and visible on the product detail page
+    //Checks if the product title is present and visible on the product detail page. 
     it('Have the product title visible', () => {
         //cy.visit('https://ui-automation-camp.vercel.app/products/quality-hat-model')
         //cy.get(HomePage.firstProduct).click();
